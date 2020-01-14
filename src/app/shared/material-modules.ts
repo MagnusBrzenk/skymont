@@ -23,7 +23,7 @@ import {
   // MatRadioModule,
   // MatRippleModule,
   // MatSelectModule,
-  // MatSidenavModule,
+  MatSidenavModule,
   // MatSliderModule,
   // MatSlideToggleModule,
   MatSnackBarModule
@@ -40,5 +40,6 @@ import {
 
 export const materialModules = [
   //
-  MatSnackBarModule
+  MatSnackBarModule,
+  MatSidenavModule
 ];

@@ -12,22 +12,15 @@ export class AppComponent implements OnInit {
 
   dataSubscription: Subscription;
 
+  isLoaded = false;
+
   constructor(private dataService: DataService) {
     //
   }
 
   ngOnInit() {
     setTimeout(() => {
-      console.log('>>> Getting data');
-      this.dataSubscription = this.dataService.getData().subscribe(
-        data => {
-          console.log(data);
-        },
-        err => {
-          console.log('^^^^^^^^^^^^^');
-          console.log(err);
-        }
-      );
-    }, 3000);
+      this.isLoaded = true;
+    }, 0);
   }
 }

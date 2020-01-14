@@ -1,3 +1,32 @@
-<div>
-  Hellow WOrld
-</div>
+<mat-sidenav-container class="example-container">
+  <mat-sidenav mode="push" #sidenav>
+    <app-side-nav></app-side-nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div [ngClass]="'app-container ' + (this.isLoaded ? 'loaded' : '')">
+      <app-header></app-header>
+      <div class="background"></div>
+      <h1>
+        Skymont -- The Habel Years
+      </h1>
+      <h2 style="font-style: italic;">
+        Where the mountains meet the sky
+      </h2>
+
+      <p>
+        This site is a testament of the Skymont Summer Camp near Bentonville, Va, that ran between
+        1946 and 1969. Towards the end of WWII, five children of the Reverend and Mrs. Samuel Habel,
+        Sr., came together, along with Jessie Reynolds, head of Parks and Recreation in Richmond,
+        Virginia, and decided that something positive needed to be done for young people, and that
+        something they determined would be a summer camp Started: 1947 Finished: 1969 Founded by:
+      </p>
+      <p>
+        The impetus for the purchase and operation of Camp Skymont was born as World War II waned.
+        Five children of the Reverend and Mrs. Samuel Habel, Sr., came together, along with Jessie
+        Reynolds, head of Parks and Recreation in Richmond, Virginia, and decided that something
+        positive needed to be done for young people, and that something they determined would be a
+        summer camp.
+      </p>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

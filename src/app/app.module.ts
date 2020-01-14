@@ -8,9 +8,11 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { CoreModule } from './core/core.module';
 import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, SideNavComponent, HeaderComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

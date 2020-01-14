@@ -1,0 +1,55 @@
+.app-container {
+}
+
+.app-container {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  transform: translateY(-20px);
+  // top: -20px;
+  // transition: transform 800ms ease-in-out;
+  transition: all 1500ms ease-in-out;
+  opacity: 0;
+}
+
+.background {
+  background-size: cover;
+  // background-image: url('../assets/images/lake.jpg');
+  background-image: url('../assets/images/grainy-river.png');
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: -1;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+  color: white;
+  padding: 0px 50px;
+}
+
+.background::after {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  content: '';
+}
+
+.loaded {
+  top: 0px;
+  transform: translateY(0px);
+  opacity: 1;
+}
