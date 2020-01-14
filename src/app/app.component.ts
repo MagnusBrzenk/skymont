@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from './core/data.service';
 import { Subscription } from 'rxjs';
 
+declare const lightGallery: any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -21,6 +23,10 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     setTimeout(() => {
       this.isLoaded = true;
+
+      //
+
+      lightGallery(document.getElementById('lightgallery'));
     }, 0);
   }
 }
